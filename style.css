@@ -1,0 +1,123 @@
+body {
+    background-color:rgb(165, 171, 172);
+    color: olive;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+}
+.navbar {
+    background-color: #ccecf8;
+    font-size: 20px;
+    max-height: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bolder;
+}
+
+.navigation .navbar-brand {
+    color: black;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+footer {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+.dropdown-item {
+    color: #daf2fa;
+}
+.dropdown-menu .dropdown-item:hover {
+    background-color: #b8ecff;
+}
+.nav-link:hover {
+    background-color: #abc7d1;
+}
+
+.content {
+	margin-top: 30px;
+	margin-bottom: 60px;
+	padding: 10px 30px 5px;
+	color: black;
+	background-color: white;
+}
+
+
+.card-padding {
+    margin-top: 40px;
+	margin-bottom: 20px;
+	padding: 10px 30px 40px;
+	color: black;
+	background-color: white;
+    font-family: 'Courier New', Courier, monospace
+}
+
+.image-area-content {
+	margin-top: 40px;
+	margin-bottom: 20px;
+	padding: 10px 30px 40px;
+	color: black;
+	background-color: white;
+}
+
+.content-header, .image-area-header {
+	padding-top: 15px; 
+	padding-left: 4px;
+	color: black;
+	font-size: 26px;
+	font-weight: bold;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+.content-image {
+        float: left;
+        width: 68%;
+        height: 68%;
+}
+
+p {
+    font-family:sans-serif;
+    color: #839496;;
+    display: block;
+    font-size: 0.9em;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;}
+
+.active, .image-fluid:hover{
+        border-color:rgb(20, 150, 150);
+        border-style: solid; 
+}
+
+/* Media Queries */
+@media (max-width: 991.98px) {
+.navbar-expand-lg{
+    background-color: #8edcf8;
+}
+.navbar{
+    max-height: none; 
+    padding: inherit;
+}
+
+.navbar div{
+    margin: inherit; 
+    background-color: #8edcf8;  
+}
+.navbar-brand{
+    padding: 10px; 
+}
+button{
+    margin-left: auto; 
+}
+
+button:focus {
+    outline: 1px dotted;
+}
+
+}
