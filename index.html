@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,10 +21,7 @@
     <div class="navigation">
         <nav class="navbar fixed-top navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="weather_icon.png" alt="" width="50" height="40" class="d-inline-block align-text-top">
-                    Latitude
-                </a>
+                <a class="navbar-brand" href="index.html">Latitude</a>
                 <button class="navbar-toggler border" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -58,88 +55,56 @@
       <div class="container">
           <section class="row">
               <div class="col-lg-7 col-md-12">
-                  <div class="content">
+                  <div class="description-content">
+                        <h1 class="description-header">Summary: Latitude vs. X</h1>
                         <hr>
-                        <h1 class="content-header">Summary: Latitude vs. X</h1>
-                        <hr>
-                        <img class="content-image" src="Resources/assets/images/Fig1.png" alt="Lattitude vs. max Temperature">
+                        <img class="description-image" src="Resources/assets/Fig1.png" alt="Lattitude vs. max Temperature">
                         <p>This project is an assignment hands-on practicing and demonstrating data requests from API, dataset cleaning, manipulation, and data visualization (geospatial visualization). The analysis includes two parts, the weather of more than 600 cities worldwide and spatial analysis of selected cities.</p>
-                        <br>
                         <p>List of cities was derived from provided CSV file cities.csv. By using city names from the list to retrieve data from API then stored in a data frame CityWeather.csv. CityWeather.csv has columns of City, Country, Lat, Lng, Date, Cloudiness, Max. Temp., Humidity, Wind Speed that contain values of each city. Correlation of the latitude, temperature, humidity, percentage of cloud, and wind speed were plotted in scatter plots, and regression analysis was calculated and add to each plot.</p>
-                        <br>
+                        
                  </div>
               </div>
         <!-- visualization part using cards -->
-            <div class="col-md-2 col-lg-4 card-padding">
-                <div class="card">
-                    <hr>
-                    <h3>Visualization</h3>
-                    <hr>
-                    <div class="row">
-                        <div class="col-sm-3 col-md-6">
-                            <a href="temperature.html">
-                                <img class="img-fluid" src="Resources/assets/images/Fig1.png" alt="Temperature (F) vs. Latitude"></a>
-                        </div>
-                        <div class="col-sm-3 col-md-6">
-                            <a href="Webs/Visualizations/humidity.html">
-                                <img class="img-fluid" src="Resources/assets/images/Fig2.png" alt="Humidity (%) vs. Latitude"></a>
-                        </div>
-                        <div class="col-sm-3 col-md-6">
-                            <a href="Webs/Visualizations/cloudiness.html">
-                                <img class="img-fluid" src="Resources/assets/images/Fig3.png" alt="Cloudiness (%) vs. Latitude"></a>
-                        </div>
-                        <div class="col-sm-3 col-md-6">
-                            <a href="Webs/Visualizations/wind_speed.html">
-                                <img class="img-fluid" src="Resources/assets/images/Fig4.png" alt="Wind Speed (mph) vs. Latitude"></a>
+            <div class="col-lg-5 col-md-12">
+                <section id="imageNav-area">
+                    <div class="imageNav-content">
+                        <h2 class="imageNav-header">Visualizations:</h2>
+                        <hr>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <a href="temperature.html">
+                                        <img class="imageNav-photo" src="Resources/assets/Fig1.png" alt="Lattitude vs. max Temperature"></a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="humidity.html">
+                                        <img class="imageNav-photo" src="Resources/assets/Fig2.png" alt="Lattitude vs. Humidity"></a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="cloudiness.html">
+                                        <img class="imageNav-photo" src="Resources/assets/Fig3.png" alt="Lattitude vs. Cloudiness"></a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="wind_speed.html">
+                                        <img class="imageNav-photo" src="Resources/assets/Fig4.png" alt="Lattitude vs. Wind Speed"></a>
+                                </div>
+
+                            </div>
+
                         </div>
 
                     </div>
 
-                </div>
+                </section>
+                
 
             </div>
 
-
-              <div class="col-lg-5 col-md-12">
-                  <section class="image-area">
-                      <div class="image-area-content">
-                          <hr>
-                          <h2 class="image-area-header">Visualization</h2>
-                          <hr>
-                          <div class="container">
-                              <div class="row">
-                                <div class="col-6">
-                                    <a href="Webs/Visualizations/temperature.html">
-                                        <img class="pics" src="Webs/Resources/assets/images/Fig1.png" alt="Temperature (F) vs. Latitude"></a></div>
-                                <div class="col-6">
-                                    <a href="Webs/Visualizations/humidity.html">
-                                        <img class="pics"  src="Webs/Resources/assets/images/Fig2.png" alt="Humidity (%) vs. Latitude"></a></div>
-                                <div class="col-6">
-                                    <a href="Webs/Visualizations/cloudiness.html">
-                                        <img class="pics"  src="Webs/Resources/assets/images/Fig3.png" alt="Cloudiness (%) vs. Latitude"></a></div>
-                                <div class="col-6">
-                                    <a href="Webs/Visualizations/wind_speed.html">
-                                        <img class="pics"  src="Webs/Resources/assets/images/Fig4.png" alt="HWind Speed (mph) vs. Latitude"></a></div>
-
-                              </div>
-                              
-                             
-                            </div>
-
-                      </div>
-
-                  </section>
-              </div>
           </section>
 
       </div>
-
-
-
-
     <!-- footer-->
-    
-<footer class="text-left text-white" style="background-color: #ccecf8;">
+    <footer class="text-left text-white" style="background-color: #ccecf8;">
     <!-- Grid container -->
     <div class="container p-2">
       <!--Grid row-->
@@ -163,9 +128,9 @@
       
         <!-- Copyright -->
         <div class="text-center text-dark p-1" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2020 Copyright: Vilaysack Khonsavanh
+          © 2021 Copyright: Vilaysack Khonsavanh
         </div>
         <!-- Copyright -->
-      </footer>
+    </footer>
 </body>
 </html>

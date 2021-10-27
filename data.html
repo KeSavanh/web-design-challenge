@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>WeatherPy Visualization Dashboard</title>
       <!-- refer to css -->
-      <link rel="stylesheet" href="Webs/Visualizations/style.css">
+      <link rel="stylesheet" href="style.css">
       <!-- call in bootstrap stylesheet -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <!-- call bundle -->
@@ -18,50 +18,51 @@
   </head>
   
   <body>
-    <div class="navigation">
-      <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-          <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">
-                  <img src="Webs/Images/weather_icon.png" alt="" width="50" height="40" class="d-inline-block align-text-top">
-                  Latitude
-              </a>
-              <button class="navbar-toggler border" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                      <ul class="navbar-nav ml-auto">
-                          <li class="nav-item dropdown">
-                              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">
-                              Plots</a>
-                                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                      <a class="dropdown-item" href="Webs/Visualizations/temperature.html">Temperature</a>
-                                      <a class="dropdown-item" href="Webs/Visualizations/humidity.html">Humidity</a>
-                                      <a class="dropdown-item" href="Webs/Visualizations/cloudiness.html">Cloudiness</a>
-                                      <a class="dropdown-item" href="Webs/Visualizations/wind_speed.html">Wind Speed</a>
-                                  </div>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="Webs/Visualizations/comparision.html">Comparision</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="Webs/Visualizations/data.html">Data</a>
-                          </li>
-                          
-                      </ul>
-                  </div>
-          </div>
-      </nav>
-  </div>
+  <!-- Navigation Bar -->
+  <div class="navigation">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Latitude</a>
+            <button class="navbar-toggler border" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">
+                            Plots</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="temperature.html">Temperature</a>
+                                    <a class="dropdown-item" href="humidity.html">Humidity</a>
+                                    <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                                    <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+                                </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="comparision.html">Comparision</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="data.html">Data</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+        </div>
+    </nav>
+</div>
   
       <!-- main content -->
-        <div class="container">
-            <section class="row">
+  <div class="container">
+      <section class="row">
+        <div>
+          <div class="description-content">
               <hr>
               <h1 class="description-header">Data</h1>
               <hr>
-              <p class="description-paragraph"></p>
+              
+              <a>The following table includes all of the data used for plotting during this project.</a>
                 <div class="description-content">
-                  <table border="1" class="dataframe">
+                  <table class="dataframe table table-striped">
                     <thead>
                       <tr style="text-align: right;">
                         <th>City_ID</th>
@@ -6644,10 +6645,13 @@
                     </tbody>
                   </table>
                 </div>
-                
-            </section>
-  
+          </div>
         </div>
+        
+                
+      </section>
+  
+  </div>
   
   
   
@@ -6677,7 +6681,7 @@
           
             <!-- Copyright -->
             <div class="text-center text-dark p-1" style="background-color: rgba(0, 0, 0, 0.2);">
-              © 2020 Copyright: Vilaysack Khonsavanh
+              © 2021 Copyright: Vilaysack Khonsavanh
             </div>
             <!-- Copyright -->
           </footer>

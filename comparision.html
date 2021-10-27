@@ -21,10 +21,7 @@
     <div class="navigation">
         <nav class="navbar fixed-top navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="Webs/Images/weather_icon.png" alt="" width="50" height="40" class="d-inline-block align-text-top">
-                    Latitude
-                </a>
+                <a class="navbar-brand" href="index.html">Latitude</a>
                 <button class="navbar-toggler border" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -34,17 +31,17 @@
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">
                                 Plots</a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="Webs/Visualizations/temperature.html">Temperature</a>
-                                        <a class="dropdown-item" href="Webs/Visualizations/humidity.html">Humidity</a>
-                                        <a class="dropdown-item" href="Webs/Visualizations/cloudiness.html">Cloudiness</a>
-                                        <a class="dropdown-item" href="Webs/Visualizations/wind_speed.html">Wind Speed</a>
+                                        <a class="dropdown-item" href="temperature.html">Temperature</a>
+                                        <a class="dropdown-item" href="humidity.html">Humidity</a>
+                                        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                                        <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
                                     </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Webs/Visualizations/comparision.html">Comparision</a>
+                                <a class="nav-link" href="comparision.html">Comparision</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Webs/Visualizations/data.html">Data</a>
+                                <a class="nav-link" href="data.html">Data</a>
                             </li>
                             
                         </ul>
@@ -56,35 +53,34 @@
     <!-- main content -->
     <div class="container">
         <section class="row">
-            <div class="content">
+            <div class="description-content">
+                <h1 class="description-header">Comparison: Latitude vs. X</h1>
                 <hr>
-                <h1 class="content-header">Comparison: Latitude vs. X</h1>
-                <hr>
-                <p class="content-description">Click any plot to get an in-depth analysis.</p>
+                <a>Click any plot to get an in-depth analysis.</a>
                 
-                <div class="pics-container">
+                <div class="pics-container"style="padding-bottom: 40px;">
                     <div class="row">
                         <div class="col-sm-3 col-md-5 com-img">
-                            <h4><br>vs. Max Temprature</br></h4>
-                            <a href="Webs/Visualizations/temperature.html">
-                                <img class="img-fluid" src="Webs/Resources/assets/images/Fig1.png" alt="Temperature (F) vs. Latitude"></a>
+                            <div class="imageNav-header">vs. Max Temperature</div>
+                            <a href="temperature.html">
+                                <img class="imageNav-photo" src="Resources/assets/Fig1.png" alt="Temperature (F) vs. Latitude"></a>
                         </div>
                         <div class="col-sm-3 col-md-5 com-img">
-                            <h4><br>vs. Humidity</br></h4>
-                            <a href="Webs/Visualizations/humidity.html">
-                                <img class="img-fluid" src="Webs/Resources/assets/images/Fig2.png" alt="Humidity (%) vs. Latitude"></a>
+                            <div class="imageNav-header">vs. Humidity</div>
+                            <a href="humidity.html">
+                                <img class="imageNav-photo" src="Resources/assets/Fig2.png" alt="Humidity (%) vs. Latitude"></a>
 
                         </div>
                         <div class="col-sm-3 col-md-5 com-img">
-                            <h4><br>vs. Cloudiness</br></h4>
-                            <a href="Webs/Visualizations/cloudiness.html">
-                                <img class="img-fluid" src="Webs/Resources/assets/images/Fig3.png" alt="Cloudiness (%) vs. Latitude"></a>
+                            <div class="imageNav-header">vs. Cloudiness</div>
+                            <a href="cloudiness.html">
+                                <img class="imageNav-photo" src="Resources/assets/Fig3.png" alt="Cloudiness (%) vs. Latitude"></a>
 
                         </div>
                         <div class="col-sm-3 col-md-5 com-img">
-                            <h4><br>vs. Wind Speed</br></h4>
-                            <a href="Webs/Visualizations/wind_speed.html">
-                                <img class="img-fluid" src="Webs/Resources/assets/images/Fig4.png" alt="Wind Speed (mph) vs. Latitude"></a>
+                            <div class="imageNav-header">s. Wind Speed</div>
+                            <a href="wind_speed.html">
+                                <img class="imageNav-photo" src="Resources/assets/Fig4.png" alt="Wind Speed (mph) vs. Latitude"></a>
 
                         </div>
 
@@ -127,7 +123,7 @@
       
         <!-- Copyright -->
         <div class="text-center text-dark p-1" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2020 Copyright: Vilaysack Khonsavanh
+          © 2021 Copyright: Vilaysack Khonsavanh
         </div>
         <!-- Copyright -->
       </footer>
