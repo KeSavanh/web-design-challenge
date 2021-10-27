@@ -41,7 +41,7 @@ body {
 	margin-bottom: 60px;
 	padding: 10px 30px 5px;
 	color: black;
-	background-color: white;
+	background-color: rgb(228, 247, 252);
 }
 
 .imageNav-content {
@@ -49,16 +49,17 @@ body {
 	margin-bottom: 20px;
 	padding: 10px 30px 40px;
 	color: black;
-	background-color: white;
+	background-color: rgb(240, 255, 249);
 }
 
 .description-header, .imageNav-header {
 	padding-top: 15px; 
-	padding-left: 4px;
-	color: rgb(20, 150, 150);
-	font-size: 26px;
+	padding-left: 5px;
+	color: rgb(46, 76, 116);
+	font-size: 30px;
 	font-weight: bold;
 	font-family:'Courier New', Courier, monospace;
+
 }
 
 img{
